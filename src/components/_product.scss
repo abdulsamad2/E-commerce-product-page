@@ -1,0 +1,154 @@
+body {
+  position: relative;
+}
+
+.row {
+  display: flex;
+  // width: 100%;
+  margin: 0 12%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.col {
+  flex: 1 1 400px;
+}
+.flex {
+  display: flex;
+}
+.product-img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+.items-center {
+  align-items: center;
+}
+.product-items {
+  text-align: left;
+  width: 100%;
+}
+.product-thumbnail {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  & img {
+    border-radius: 8%;
+    flex: 1 1 100px;
+    width: 70%;
+    height: 8rem;
+    object-fit: cover;
+    margin: 2.3rem;
+    &:not(first-child),
+    &:not(last-child) {
+      padding: 0;
+    }
+  }
+}
+
+.product-items {
+  margin-top: -20rem;
+  padding-left: 10rem;
+  & > * {
+    padding: 1.3rem 0;
+  }
+}
+.top-heading {
+  color: $Orange;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.8;
+}
+.main-heading {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: $Veryvarkblue;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+.product-description {
+  font-family: Work Sans;
+  // max-width: rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $Darkgrayishblue;
+  line-height: 1.8;
+}
+.price {
+  font-size: 3rem;
+  color: $Veryvarkblue;
+  font-family: Work Sans;
+  font-weight: 700;
+  & span {
+    margin-left: 1rem;
+    color: $Orange;
+    font-size: 2rem;
+    padding: 0.8rem;
+    background-color: $Paleorange;
+  }
+}
+.original-price {
+  font-size: 2rem;
+  text-decoration: line-through;
+  color: $Grayishblue;
+}
+.cart-field {
+  text-align: center;
+}
+
+#product-quantity {
+  cursor: pointer;
+  padding: 1.5rem 3rem;
+  width: 18rem;
+  border: none;
+  border-radius: 1rem;
+  margin: 0 -3rem;
+
+  background-color: $Lightgrayishblue;
+  // margin: 0 -3rem;
+
+  align-items: center;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input#product-quantity {
+  text-align: center;
+}
+form {
+  justify-content: center;
+}
+.btn-cart {
+  margin-left: 5rem;
+  padding: 1.5rem 6rem;
+  background: $Orange;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  color: $Veryvarkblue;
+  color: $White;
+}
+.btn {
+  cursor: pointer;
+  color: $Orange;
+  font-weight: bolder;
+  font-size: 4rem;
+
+  &-minus {
+    z-index: 50;
+  }
+}
+
+.lightbox {
+  width: 40%;
+  margin: 0 auto;
+}
